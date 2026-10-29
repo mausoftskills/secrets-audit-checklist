@@ -8,7 +8,7 @@ The agent never prints or handles secret values. You create and paste keys yours
 Supabase is deprecating the legacy JWT keys (`anon` and `service_role`) by the end of 2026, so every project still using them has this migration ahead. Most apps that have been running a while also pick up the same key pasted into four services, variables nobody reads any more, and secrets that were never sealed. It's easier to fix all of that in one careful pass than one surprise at a time.
 
 ## Install
-Copy the `secrets-audit-checklist` folder (the one with `SKILL.md` directly inside) into your agent's skills folder. The folder name has to match the `name` in SKILL.md.
+This repo is the skill folder (`SKILL.md` sits at the top), so clone or copy it into your agent's skills folder as `secrets-audit-checklist`. The folder name has to match the `name` in SKILL.md.
 
 - Claude Code: `~/.claude/skills/` (or `.claude/skills/` in one project)
 - Cursor: `~/.cursor/skills/` (or `.cursor/skills/` in one project)
@@ -16,9 +16,8 @@ Copy the `secrets-audit-checklist` folder (the one with `SKILL.md` directly insi
 
 For example:
 ```bash
-git clone https://github.com/mausoftskills/secrets-audit-checklist
 mkdir -p ~/.claude/skills
-cp -r secrets-audit-checklist/secrets-audit-checklist ~/.claude/skills/
+git clone https://github.com/mausoftskills/secrets-audit-checklist ~/.claude/skills/secrets-audit-checklist
 ```
 
 Then ask your agent something like:
