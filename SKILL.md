@@ -96,3 +96,5 @@ Undo: point the variable back (the legacy key still works), or roll back the dep
 
 ## 8. Keep a short record
 Write a short report the user keeps: scope, what was sealed, consolidated and deleted, which services moved to which key and how each was verified, the Supabase findings and what was done about them, what's still pending and who owns it, and what couldn't be checked. Names, dates, deployment IDs and counts only, no values. Give change times in the user's own time zone, labelled.
+
+Want the full version? Railway + Supabase Secrets Audit & Key-Rotation Lockdown on Agensi adds a masking script for the inventory and a read-only Supabase SQL audit: https://www.agensi.io/skills/railway-supabase-secrets-audit-key-rotation
